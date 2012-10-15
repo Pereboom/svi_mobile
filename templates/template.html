@@ -1,0 +1,119 @@
+<div class="templates">
+	
+	<script class="menu" type="text/template">
+		<nav>
+			<ul>
+				<% _.each(menuItems, function(name)
+					{
+						%><li><a href=#/<%= name %>><%= name %></a></li> <%
+					});
+				%>
+			</ul>
+		</nav>
+
+	</script>
+	
+	<script class="home" type="text/template">
+
+		<div class="container">
+
+			<div class="section">
+				<div class="col four">
+	            	<div class="darkgrey">
+	            		<h3><%=titleWelcome%></h3>
+                		<p><%=contentWelcome%></p>
+                		<div class="block_arrow">
+                			<a href="#">Lees meer</a>
+                		</div>
+	            	</div>
+            	</div>
+
+				<div class="col four">
+	            	<div class="darkgrey">
+	            		<h3><%=titlePromotion%></h3>
+                		<p><%=contentPromotion%></p>
+                		<!--<img src=<%=img%> /> -->
+                		<div class="block_arrow">
+                			<a href="#">Lees meer</a>
+                		</div>
+	            	</div>
+            	</div>
+
+				<div class="col four">
+	            	<div class="darkgrey">
+	            		<h3><%=titleEvents%></h3>
+                		<p><%=contentEvents%></p>
+                		<div class="block_arrow">
+                			<a href="#">Lees meer</a>
+                		</div>
+	            	</div>
+            	</div>
+			</div>
+		</div>
+
+	</script>
+
+	<script class="svi">
+
+		<div class="container">
+	        <div class="section">
+	        
+	            <div class="col three">
+		            <div class="darkgrey">
+		                <h3><%=titleNews%></h3>
+		                <p><%=contentNews%></p>
+		                <div class="block_arrow">
+		                	<a href="#">Lees verder</a>
+		                </div>
+		            </div>
+	            </div>
+
+				<div class="col three">
+		            <div class="darkgrey">
+		                <h3><%=titleEvents%></h3>
+		                <p><%=contentEvents%></p>
+		                <div class="block_arrow">
+		                	<a href="#">Lees verder</a>
+		                </div>
+		            </div>
+	            </div>
+
+	            <div class="col three">
+		            <div class="darkgrey">
+		                <h3><%=titlePers%></h3>
+		                <p><%=contentPers%></p>
+		                <div class="block_arrow">
+		                	<a href="#">Lees verder</a>
+		                </div>
+		            </div>
+	            </div>            
+
+	        </div>
+	    </div>
+
+	</script>
+
+	<script class="events">
+
+		<div class="container">
+	        <div class="section">
+
+	       		<% _.each(evenementen, function(data)
+					{%>
+						<div class="col three">
+		            		<div class="darkgrey">
+								<h3><%=data.attributes.title%></h1>
+								<p><%=data.attributes.content%></p>
+								<div class="block_arrow">
+		                			<a href="#">Lees verder</a>
+		                		</div>
+		                	</div>
+		                </div>
+					<%});
+				%>       
+
+	        </div>
+	    </div>
+
+	</script>
+</div>
